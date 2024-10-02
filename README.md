@@ -9,6 +9,10 @@ Integrantes:
 2. ¿Qué problema o molestia soluciona?
     Hay un problema para los grupos que tienen la necesidad de tomar un bus mediano, de rutas definidas, pero que no cueste caro, normalmente tienen que recurrir a colectivos, pero dependes de la suerte para lograr abarcar uno. El aplicativo pretende poder agendar el servicio para estas casuisticas. 
 3. Definición de su Producto mínimo viable (MVP).
-	- Formulario de Solicitud de Servicio
+    - Home informativa
+    - Formulario Registro Usuario
+    - Formulario Registro de Conductor
     - Formulario de Registro de Colectivo
     - Catálogo de Colectivos con Horarios
+   	- Formulario de Solicitud de Servicio
+    - Pasarela de Pago Simple
