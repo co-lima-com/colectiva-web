@@ -16,3 +16,46 @@ Integrantes:
     - Catálogo de Colectivos con Horarios
    	- Formulario de Solicitud de Servicio
     - Pasarela de Pago Simple
+
+Modelo de Dominio
+
+Usuario
+
+    - Nombre
+    - Apellido Paterno
+    - Apellido Materno
+    - Fecha de Nacimiento
+    - DNI
+    - Dirección
+    - Correo Electrónico
+    - Contraseña
+    - DNI Cara
+    - DNI Contracara
+
+Conductor
+
+    - Nombre
+    - Apellido Paterno
+    - Apellido Materno
+    - Fecha de Nacimiento
+    - DNI
+    - Dirección
+    - Correo Electrónico
+    - Contraseña
+    - SOAT Cara
+    - SOAT Contracara
+    - DNI Cara
+    - DNI Contracara
+
+Colectivo
+
+    - Marca
+    - Modelo
+    - Año
+    - Placa
+    - Distrito Inicio
+    - Distrito Fin
+    - Número Asientos
+    - Paradero 1
+    - Hora Estimada
+    - Foto del Vehículo
