@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/registroConductor.js"></script>
     <title>Colectiva</title>
 </head>
 <body>
@@ -35,28 +36,28 @@
                 <label for="driverDNI">DNI</label>
                 <input id="driverDNI" type="number">
                 <label for="driverDireccion">Dirección</label>
-                <input id="driverDireccion" type="text" placeholder="Ingresa tu Dirección">
+                <input id="driverDireccion" type="text" placeholder="Ingresa tu dirección">
                 <label for="driverEmail">Correo Electrónico</label>
-                <input id="driverEmail" type="text" placeholder="Ingresa tu Dirección de Correo Electrónico">
+                <input id="driverEmail" type="text" placeholder="Ingresa tu dirección de Correo Electrónico">
                 <label for="driverPassword">Contraseña</label>
                 <input id="driverPassword" type="password">
                 <label for="driverDniCara">Carga tu DNI (Cara)</label>
                 <input type="file" name="Carga tu DNI" id="driverDniCara">
                 <label for="driverDniContraCara">Carga tu DNI (Contra Cara)</label>
                 <input type="file" name="Carga tu DNI" id="driverDniContraCara">
-                <label for="driverSoatCara">Carga tu DNI (Cara)</label>
-                <input type="file" name="Carga tu DNI" id="driverSoatCara">
-                <label for="driverSoatContraCara">Carga tu DNI (Contra Cara)</label>
-                <input type="file" name="Carga tu DNI" id="driverSoatContraCara">                      
+                <label for="driverSoatCara">Carga tu Soat (Cara)</label>
+                <input type="file" name="Carga tu Soat" id="driverSoatCara">
+                <label for="driverSoatContraCara">Carga tu Soat (Contra Cara)</label>
+                <input type="file" name="Carga tu Soat" id="driverSoatContraCara">                      
             </fieldset>
         </form>
     </section>
     <section>
-        <button>
+        <button id = "storeButton">
             Regístrate
         </button>
         <button>
-            Cancelar
+            Volver
         </button>
     </section>
 </body>
