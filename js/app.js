@@ -1,7 +1,7 @@
 'use strict';
 
-const busquedaViaje = document.getElementById('formViaje')
-const resultadosViaje = document.getElementById('catalogoViaje')
+const busquedaViaje = document.getElementById('formViaje');
+const resultadosViaje = document.getElementById('catalogoViaje');
 
 let viajes = [];
 
@@ -41,29 +41,18 @@ busquedaViaje.addEventListener('submit', (e) => {
   const fechaViaje = document.getElementById('date').value;
   const horaViaje = document.getElementById('time').value;
 
-  const viajeFormulario = {
-    origen,
-    destino,
-    fechaViaje,
-    horaViaje
-  };
-
-  mostrarResultados();
-
+  mostrarResultados(origen, destino, fechaViaje, horaViaje);
 });
 
-function mostrarResultados() {
+function mostrarResultados(origen, destino, fechaViaje, horaViaje) {
   resultadosViaje.innerHTML = '';
 
   viajes.forEach((viajeExistente, index) => {
-
-    if (viajeExistente.origen === viaje.origen && viajeExistente.destino === viaje.destino) {
+    if (viajeExistente.origen === origen && viajeExistente.destino === destino && viajeExistente.fechaViaje === fechaViaje) {
       const listaElement = document.createElement('li');
-      listaElement.textContent = 'viaje $(index +1)' ${ viajeExistente.origen } -> ${ viajeExistente.destino }, ${ viajeExistente.fechaViaje } - ${ viajeExistente.fechaRetorno } `; 
+      listaElement.textContent = `Viaje ${index + 1}: ${viajeExistente.origen} -> ${viajeExistente.destino}, ${viajeExistente.fechaViaje} - ${viajeExistente.horaViaje}`;
 
       resultadosViaje.appendChild(listaElement);
-
     }
   });
-    
-};
+}
