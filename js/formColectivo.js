@@ -9,7 +9,7 @@ formulario.addEventListener('submit', (e) => {
 
   // Obtener los valores del formulario
   const marca = document.getElementById('poolMarca').value;
-  const año = document.getElementById('poolYear').value;
+  const year = document.getElementById('poolYear').value;
   const modelo = document.getElementById('poolModelo').value;
   const placa = document.getElementById('poolPlaca').value;
   const distritoInicio = document.getElementById('poolDistritoInicio').value;
@@ -21,7 +21,7 @@ formulario.addEventListener('submit', (e) => {
   // Crear un objeto con la información del formulario
   const datosVehiculo = {
     marca,
-    año,
+    year,
     modelo,
     placa,
     distritoInicio,
@@ -37,3 +37,4 @@ formulario.addEventListener('submit', (e) => {
   // Mostrar un mensaje de confirmación
   alert('Datos registrados con éxito!');
 });
+
