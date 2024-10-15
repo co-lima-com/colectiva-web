@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/js/registroConductor.js"></script>
+    
     <title>Colectiva</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
         </nav>
     </header>
     <section>
-        <form id="registrationForm" action="">
+        <form id="registrationForm" >
             <fieldset>
                 <Legend>Registra tus Datos </Legend>
                 <label for="driverNombre">Nombre</label>
@@ -50,15 +50,17 @@
                 <label for="driverSoatContraCara">Carga tu Soat (Contra Cara)</label>
                 <input type="file" name="Carga tu Soat" id="driverSoatContraCara">                      
             </fieldset>
+            <button id ='storeButton' type = 'submit'>
+                Regístrate
+            </button>
+            <button >
+                Volver
+            </button>
         </form>
     </section>
     <section>
-        <button id = "storeButton">
-            Regístrate
-        </button>
-        <button>
-            Volver
-        </button>
+        
     </section>
+    <script src="../js/registroConductor.js"></script>
 </body>
 </html>

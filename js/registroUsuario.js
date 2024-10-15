@@ -2,10 +2,10 @@
 
 //Seleccionamos el formulario
 const form = document.getElementById('registrationForm');
-const storeButton = document.getElementById('storeButton');
+
 
 // Agregamos un evento de submit al formulario
-storeButton.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
     // Evitamos que el formulario se envíe por defecto
     e.preventDefault();
 
@@ -41,14 +41,16 @@ storeButton.addEventListener('click', (e) => {
     // Almaceno el objeto en un localstorage
     localStorage.setItem('formData', JSON.stringify(formData));
 
-    //Recuperar del localstorage
-    const formDataString = localStorage.getItem('formData');
+    // //Recuperar del localstorage
+    // const formDataString = localStorage.getItem('formData');
 
-    //Deserializar el objeto
-    JSON.parse('formdata',formDataString);
+    // //Deserializar el objeto
+    // JSON.parse('formdata',formDataString);
 
     // Para imprimir y ver errores
     console.log(formData);
+
+    alert('¡Registro exitoso! Puedes iniciar sesión.');
 
 }
 );
