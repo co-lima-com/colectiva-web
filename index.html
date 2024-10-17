@@ -4,52 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Colectiva</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <img src="" alt="">
-            <button>
-                Registro
-            </button>
-            <button>
-                Programa tu Viaje
-            </button>
-            <button>
-                Sé un Socio Conductor
-            </button>
+        <nav class='contenedor'>
+            <a href="./index.html">
+                <img src="./img/banner.png" alt="" class='imagen'>
+            </a>
+            
+            <div class='botones'>
+                <a href="./Pages/registroUsuario.html" class='mi-botonEncabezado'>
+                    Registro
+                </a>
+                <a href="./Pages/fichaColectivo.html" class='mi-botonEncabezado'>
+                    Programa tu Viaje
+                </a>
+                <a href="./Pages/registroConductor.html" class='mi-botonEncabezado'>
+                    Sé un Socio Conductor
+                </a>
+            </div>
         </nav>
     </header>
-    <section>
-        <img src="" alt="">
-    </section>
-    <section>
-        <div>
+
+    <section class='contenedor-dos'>
+        <img class ='img-background' src="" alt="">
+        <div class = 'my-form'>
             <img src="" alt="">
-            <form id="form">
+            <form  id="form">
                 <input type="search" id="query" name="q" placeholder="Search...">
-                <button>Search</button>
+                
             </form>
         </div>
-        <div>
+        <div class = 'my-form'>
             <img src="" alt="">
-            <form id="form">
+            <form  id="form">
                 <input type="search" id="query" name="q" placeholder="Search...">
-                <button>Search</button>
+                
             </form>
         </div>
-        <div>
+        <div class = 'my-date'>
             <img src="" alt="">
             <input type="date" id="date">
         </div>
-        <div>
+        <div class = 'my-date'>
             <img src="" alt="">
             <input type="date" id="date">
         </div>
-        <div>
-            <button>Buscar</button>
+        <div  id ='buscar'>
+            <button class = 'my-button' >Buscar</button>
         </div>
     </section>
 </body>

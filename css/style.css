@@ -1,0 +1,145 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.contenedor {
+    position: relative;
+    /* Establece el contenedor como relativo */
+    width: 100%;
+    /* Ajusta el ancho según sea necesario */
+    height: 300px;
+    /* Ajusta la altura según sea necesario */
+}
+
+.imagen {
+    position: absolute;
+    /* Posiciona la imagen de manera absoluta */
+    top: 40px;
+    ;
+    /* Alinea la imagen en la parte superior */
+    left: 5%;
+    /* Alinea la imagen a la izquierda */
+    width: 20%;
+    /* Ajusta el ancho a la mitad del contenedor */
+    height: auto;
+    /* Mantiene la proporción original de la imagen */
+}
+
+.botones {
+    position: absolute;
+    /* Posiciona la imagen de manera absoluta */
+    top: 70px;
+    /* Alinea la imagen en la parte superior */
+    right: 15%;
+    /* Alinea la imagen a la derecha */
+    width: 20%;
+    /* Ajusta el ancho al contenedor */
+    height: auto;
+    /* Mantiene la proporción original de la imagen */
+    white-space: nowrap;
+
+}
+
+.mi-boton+.mi-boton {
+    margin-left: 20px;
+    /* Agrega un margen izquierdo de 20px a todos los enlaces excepto el primero */
+
+}
+
+.mi-botonEncabezado {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    /* Espacio interno: 10px arriba y abajo, 20px a los lados */
+    margin: 15px;
+    /* Espacio externo: 15px en todos los lados */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s;
+    /* Transición suave para el cambio de color */
+}
+
+.mi-botonEncabezado:hover {
+    background-color: #d84e55;
+}
+
+.contenedor-dos {
+    
+    display: flex;
+    /* Activa Flexbox */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    
+
+    width: 100%;
+    /* Ajusta el ancho según sea necesario */
+    height: 400px;
+    /* Ajusta la altura según sea necesario */
+
+    justify-content: center; /* Alinear a la izquierda */
+    
+
+
+    background:
+        url('../img/img_background.png') center,
+        /* Imagen de fondo */
+        rgba(255, 255, 255, 0.342);
+    /* Color de fondo con transparencia */
+    background-size:contain;
+    /* Ajusta la imagen para cubrir el área */
+    background-repeat: repeat-x;
+
+}
+
+.my-form {
+    margin-inline: 50px;
+    
+}
+
+
+.my-date {
+    margin-inline: 50px;
+    margin-top: 20px;
+}
+
+.my-button {
+    background-color: #d84e55;
+    /* Color de fondo verde */
+    color: white;
+    /* Color del texto blanco */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s;
+    /* Transición suave para el cambio de color */
+    margin-top: 15px;
+}
+
+.my-button:hover {
+    background-color: #3d0808;
+    /* Color de fondo más oscuro al pasar el ratón */
+}

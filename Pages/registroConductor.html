@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Colectiva</title>
 </head>
 <body>
     <header>
-        <nav>
-            <img src="" alt="">
-            <button>
-                Registro
-            </button>
-            <button>
-                Programa tu Viaje
-            </button>
-            <button>
-                Sé un Socio Conductor
-            </button>
+        <nav class='contenedor'>
+            <a href="../index.html">
+                <img src="../img/banner.png" alt="" class='imagen'>
+            </a>
+            <div class='botones'>
+                <a href="../Pages/registroUsuario.html" class='mi-botonEncabezado'>
+                    Registro
+                </a>
+                <a href="../Pages/fichaColectivo.html" class='mi-botonEncabezado'>
+                    Programa tu Viaje
+                </a>
+                <a href="../Pages/registroConductor.html" class='mi-botonEncabezado'>
+                    Sé un Socio Conductor
+                </a>
+            </div>
         </nav>
     </header>
     <section>
         <form id="registrationForm" >
             <fieldset>
-                <Legend>Registra tus Datos </Legend>
+                <Legend>Registra tus Datos (Todos los campos son obligatorios) </Legend>
                 <label for="driverNombre">Nombre</label>
                 <input id="driverNombre" type="text" placeholder="Escribe tu Nombre">
                 <label for="driverApellidoPaterno">Apellido Paterno</label>
@@ -53,11 +58,12 @@
             <button id ='storeButton' type = 'submit'>
                 Regístrate
             </button>
-            <button >
-                Volver
-            </button>
+
         </form>
     </section>
+    <a href="" class="btn btn-primary">
+        Volver
+    </a>
     <section>
         
     </section>

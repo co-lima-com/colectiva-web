@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/js/registroUsuario.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Colectiva</title>
 </head>
 <body>
     <header>
-        <nav>
-            <img src="" alt="">
-            <button>
-                Registro
-            </button>
-            <button>
-                Programa tu Viaje
-            </button>
-            <button>
-                Sé un Socio Conductor
-            </button>
+        <nav class='contenedor'>
+            <a href="../index.html">
+                <img src="../img/banner.png" alt="" class='imagen'>
+            </a>
+            <div class='botones'>
+                <a href="../Pages/registroUsuario.html" class='mi-botonEncabezado'>
+                    Registro
+                </a>
+                <a href="../Pages/fichaColectivo.html" class='mi-botonEncabezado'>
+                    Programa tu Viaje
+                </a>
+                <a href="../Pages/registroConductor.html" class='mi-botonEncabezado'>
+                    Sé un Socio Conductor
+                </a>
+            </div>
         </nav>
     </header>
     <section>
@@ -49,13 +54,13 @@
             <button id ='storeButton' type = 'submit'>
                 Regístrate
             </button>
-            <button >
-                Volver
-            </button>
-        </form>
+          </form>
     </section>
-    <section>
 
+    <section>
+        <a href="http://127.0.0.1:5500/index.html" class="btn btn-primary">
+            Volver
+        </a>
     </section>
     <script src="../js/registroConductor.js"></script>
     
