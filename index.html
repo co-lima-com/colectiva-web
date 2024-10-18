@@ -11,47 +11,41 @@
     <header>
         <nav>
             <img src="" alt="">
-            <button>
+            <a href="/Pages/registroUsuario.html">
                 Registro
-            </button>
-            <button>
-                Programa tu Viaje
-            </button>
-            <button>
+            </a>
+            <a href="/">
+                Inicia Sesión
+            </a>
+            <a href="/Pages/registroConductor.html">
                 Sé un Socio Conductor
-            </button>
+            </a>
         </nav>
     </header>
     <section>
         <img src="" alt="">
     </section>
     <section>
-        <div>
+        <form id="formViaje" action="">
             <img src="" alt="">
-            <form id="form">
-                <input type="search" id="query" name="q" placeholder="Search...">
-                <button>Search</button>
-            </form>
-        </div>
-        <div>
+            <label for="queryInicio">Paradero de Inicio</label>
+            <input type="search" id="queryInicio" name="q" placeholder="Search...">
             <img src="" alt="">
-            <form id="form">
-                <input type="search" id="query" name="q" placeholder="Search...">
-                <button>Search</button>
-            </form>
-        </div>
-        <div>
+            <label for="queryLlegada">Paradero de Llegada</label>
+            <input type="search" id="queryLlegada" name="q" placeholder="Search...">
             <img src="" alt="">
+            <label for="date">Fecha de Viaje</label>
             <input type="date" id="date">
-        </div>
-        <div>
             <img src="" alt="">
-            <input type="date" id="date">
-        </div>
-        <div>
-            <button>Buscar</button>
-        </div>
+            <label for="time">Hora de Viaje</label>
+            <input type="time" id="time">
+            <button id="submitViaje">Buscar</button>
+        </form>
     </section>
+    <section id="catalogoViaje">
+
+    </section>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
