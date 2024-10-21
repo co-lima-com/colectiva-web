@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Colectiva</title>
 </head>
 <body>
     <header>
         <nav class='contenedor'>
-            <a href="./index.html">
-                <img src="./img/banner.png" alt="" class='imagen'>
+            <a href="../index.html">
+                <img src="../img/banner.png" alt="" class='imagen'>
             </a>
 
             <div class='botones'>
@@ -33,7 +33,7 @@
     <section>
         <form id="registrationForm" action="">
             <fieldset>
-                <Legend>Registra tus Datos </Legend>
+                <legend>Registra tus Datos</legend>
                 <label for="userNombre">Nombre</label>
                 <input id="userNombre" type="text" placeholder="Escribe tu Nombre">
                 <label for="userApellidoPaterno">Apellido Paterno</label>
@@ -50,21 +50,19 @@
                 <input id="userEmail" type="text" placeholder="Ingresa tu Dirección de Correo Electrónico">
                 <label for="userPassword">Contraseña</label>
                 <input id="userPassword" type="password">
-                <label for="userDniCara">Carga tu DNI (Cara)</label>
-                <input type="file" name="Carga tu DNI" id="userDniCara">
-                <label for="userDniContraCara">Carga tu DNI (Contra Cara)</label>
-                <input type="file" name="Carga tu DNI" id="userDniContraCara">                
+                <button type="submit">Regístrate</button>
             </fieldset>
         </form>
     </section>
-    <section>
-        <button>
-            Regístrate
-        </button>
-        <button>
-            Cancelar
-        </button>
-    </section>
-    <script src="../js/registroConductor.js"></script>
+    <script src="../js/registroUsuario.js"></script>
 </body>
+<footer>
+    <p>© 2024 Johel Cueva - Michael Limaco. Todos los derechos reservados.</p>
+    <div class="contenedor-footer">
+        <a class="item" href="#">Políticas de privacidad</a>
+        <a class="item" href="#">Términos del servicio</a>
+        <a class="item" href="#">Contáctanos</a>
+    </div>
+    <img src="../img/img_footer.png" alt="Redes sociales" class='img-footer'>
+</footer>
 </html>
