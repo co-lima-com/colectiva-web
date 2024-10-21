@@ -12,11 +12,10 @@ formulario.addEventListener('submit', (e) => {
   const year = document.getElementById('poolYear').value;
   const modelo = document.getElementById('poolModelo').value;
   const placa = document.getElementById('poolPlaca').value;
-  const distritoInicio = document.getElementById('poolDistritoInicio').value;
-  const distritoLlegada = document.getElementById('poolDistritoLlegada').value;
+  const distritoInicio = document.getElementById('poolParaderoInicio').value;
+  const distritoLlegada = document.getElementById('poolParaderoLlegada').value;
   const numeroAsientos = document.getElementById('poolNumeroAsientos').value;
   const foto1 = document.getElementById('poolFoto1').value;
-  const paradero1 = document.getElementById('poolparadero1').value;
 
   // Crear un objeto con la información del formulario
   const datosVehiculo = {
@@ -28,7 +27,6 @@ formulario.addEventListener('submit', (e) => {
     distritoLlegada,
     numeroAsientos,
     foto1,
-    paradero1
   };
 
   // Almacenar la información en el local storage
@@ -36,5 +34,9 @@ formulario.addEventListener('submit', (e) => {
 
   // Mostrar un mensaje de confirmación
   alert('Datos registrados con éxito!');
+
+  
+  // Redirigir al usuario a la página fichaColectivoForm.html
+  window.location.href = '../pages/fichaColectivoForm.html';
 });
 

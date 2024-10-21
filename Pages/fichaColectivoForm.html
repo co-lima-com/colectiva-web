@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
-</head>
-<body>
+    <title>Colectiva</title>
+  </head>
+
+  <body>
     <header>
         <nav class='contenedor'>
             <a href="../index.html">
@@ -29,22 +30,17 @@
                 </a>
             </div>
         </nav>
-    </header>  
-    <section>
-        <form id="inicioSesion" action="">
-            <fieldset>
-                <legend>Registra los Datos de tu Vehículo</legend>
-                <label for="userEmail">E-Mail</label>
-                <input id="userEmail" type="text">
-                <label for="userPassword">Contraseña</label>
-                <input id="userPassword" type="password">
-                <button type="submit">Inicia Sesion</button>
-            </fieldset>
-        </form>
-
-    </section> 
-</body>
-<footer>
+    </header>
+    <section id="titulos"></section>
+    <section id="cuerpo"></section>
+    <section id="request">
+      <label for="requestNumeroAsientos">Reservar Asientos</label>
+      <input id="requestNumeroAsientos" type="number" />
+      <button id="reservarViajeColectivo">Reservar</button>
+    </section>
+    <script src="../js/fichaColectivoForm.js"></script>
+  </body>
+  <footer>
     <p>© 2024 Johel Cueva - Michael Limaco. Todos los derechos reservados.</p>
     <div class="contenedor-footer">
         <a class="item" href="#">Políticas de privacidad</a>
