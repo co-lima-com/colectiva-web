@@ -14,7 +14,7 @@ const viajes = [
     modelo: "Sprinter",
     placa: "KLM-123",
     numeroAsientos: 20,
-    foto: "https://example.com/foto1.jpg",
+    foto: "https://place-hold.it/450x375/aaa/black.png&text=450*375",
   },
   {
     origen: "Navarrete",
@@ -26,7 +26,7 @@ const viajes = [
     modelo: "Hiace",
     placa: "ABC-456",
     numeroAsientos: 15,
-    foto: "https://example.com/foto2.jpg",
+    foto: "https://place-hold.it/450x375/aaa/black.png&text=450*375",
   },
   {
     origen: "Salaverry",
@@ -38,7 +38,7 @@ const viajes = [
     modelo: "Transit",
     placa: "DEF-789",
     numeroAsientos: 25,
-    foto: "https://example.com/foto3.jpg",
+    foto: "https://place-hold.it/450x375/aaa/black.png&text=450*375",
   },
   {
     origen: "La Marina",
@@ -50,7 +50,7 @@ const viajes = [
     modelo: "H1",
     placa: "GHI-012",
     numeroAsientos: 18,
-    foto: "https://example.com/foto4.jpg",
+    foto: "https://place-hold.it/450x375/aaa/black.png&text=450*375",
   },
 ];
 
@@ -89,6 +89,7 @@ function mostrarResultados(origen, destino) {
           numeroAsientos: viaje.numeroAsientos,
           foto: viaje.foto,
         };
+        localStorage.clear();
         localStorage.setItem(`viaje${index}`, JSON.stringify(viajeData));
         window.location.href = "./Pages/fichaColectivo.html";
       });
