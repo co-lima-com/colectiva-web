@@ -14,15 +14,13 @@ body {
 }
 
 .contenedor {
-  /* position: relative; */
-  /* Establece el contenedor como relativo */
+  
   width: 100%;
   display: flex;
   margin-top: 20px;
   align-items: center;
-  /* Ajusta el ancho según sea necesario */
-  /* height: 300px; */
-  /* Ajusta la altura según sea necesario */
+  
+  
 }
 
 .contenedor > ul {
@@ -30,36 +28,19 @@ body {
 }
 
 .imagen {
-  /* position: absolute; */
-  /* Posiciona la imagen de manera absoluta */
-  /* top: 40px; */
-  /* Alinea la imagen en la parte superior */
-  /* left: 5%; */
-  /* Alinea la imagen a la izquierda */
-  width: 20%;
-  /* Ajusta el ancho a la mitad del contenedor */
+  display: flex;
+  width: 30%;
+  margin-left: 18%;
   height: auto;
-  /* Mantiene la proporción original de la imagen */
+  
 }
 
 .botones {
-  /* position: absolute; */
-  /* Posiciona la imagen de manera absoluta */
-  /* top: 70px; */
-  /* Alinea la imagen en la parte superior */
-  /* right: 23%; */
-  /* Alinea la imagen a la derecha */
-  /* width: 20%; */
-  /* Ajusta el ancho al contenedor */
-  /* height: auto; */
-  /* Mantiene la proporción original de la imagen */
+ 
   white-space: nowrap;
 }
 
-.mi-boton + .mi-boton {
-  margin-left: 20px;
-  /* Agrega un margen izquierdo de 20px a todos los enlaces excepto el primero */
-}
+
 
 .mi-botonEncabezado {
   text-decoration: none;
@@ -84,24 +65,27 @@ body {
 }
 
 .contenedor-dos {
-  display: flex;
-  /* Activa Flexbox */
-  justify-content: center;
-  flex-direction: column;
-  /* Centra horizontalmente */
-  align-items: center;
-  margin-top: 20px;
-  /* Centra verticalmente */
   width: 100%;
-  /* Ajusta el ancho según sea necesario */
-  min-height: 100vh;
-  /* Ajusta la altura según sea necesario */
-  justify-content: center;
+  display: flex;
+  margin-top:465px;
+  
+  align-content: center;
+
+  
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-items: stretch; /* Alinea los elementos para que ocupen todo el ancho */
+  width: 100%; /* Ancho del contenedor */
+  height: 300px; /* Altura del contenedor */
+  
+  
+
+
+
   background: url("../img/img_background.png") center,
     /* Imagen de fondo */ rgba(255, 255, 255, 0.342);
 
   /* Color de fondo con transparencia */
-  background-size: contain;
+  background-size:contain;
   /* Ajusta la imagen para cubrir el área */
   background-repeat: repeat-x;
   /* transition: background 0.5s ease; */
@@ -109,13 +93,16 @@ body {
   /* Animación continua */
 }
 
-.img-contenedor:hover {
-  transform: scale(1.1);
-}
+
 
 .my-form {
-  margin-top: -500px;
+  display: flex;
+  margin-top: -25vh;
+  margin-left: 20%;
   background-color: white;
+  border-radius: 5px;
+  
+  
 }
 
 form label {
@@ -193,10 +180,12 @@ form label {
 footer {
   background-color: #272626;
   color: #fff;
-  padding: 50px;
-  text-align: center;
   display: flex;
-  border: solid white;
+  margin-bottom: 0vh;
+  
+
+  
+
   /* width: 100%; */
   justify-content: space-between;
   /* Centra horizontalmente los enlaces */
@@ -205,10 +194,7 @@ footer {
 }
 
 footer a {
-  /* Permite
-  /* Coloca el enlace en la mitad del contenedor */
-  /* transform: translate(50%, 40%); */
-  /* Centra el enlace tanto vertical como horizontalmente */
+  padding: 5% 1%;
   color: white;
   text-decoration: none;
 }
@@ -284,6 +270,7 @@ footer a {
   gap: 40px;
   padding: 20px;
   width: 100%;
+  z-index: 1000;
 }
 
 .catViaje > button {
@@ -299,9 +286,12 @@ footer a {
   /* Cambia el cursor al pasar el ratón */
   transition: transform 0.3s;
 }
+.catViaje > button:hover{
+  background-color: #000000;
+}
 
 .my-form > input {
-  padding: 10px 15px;
+  padding: 1px 15px;
   border-radius: 6px;
 }
 
@@ -311,6 +301,7 @@ footer a {
   gap: 20px;
   padding: 20px;
   background-color: white;
+  border-radius: 6px;
 }
 
 .viaje > button {

@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/fichaColectivo.css">
@@ -12,50 +12,58 @@
 
 <body>
     <header>
-        <nav class='contenedor'>
+        <nav class="contenedor">
             <a href="../index.html">
-                <img src="../img/banner.png" alt="" class='imagen'>
+                <img src="../img/banner.png" alt="" class="imagen" />
             </a>
 
-            <div class='botones'>
-                <a href="../Pages/registroUsuario.html" class='mi-botonEncabezado'>
-                    Registro
-                </a>
-                <a href="../Pages/inicioSesion.html" class='mi-botonEncabezado'>
-                    Inicia Sesión
-                </a>
-                <a href="../Pages/fichaColectivo.html" class='mi-botonEncabezado'>
-                    Programa tu Viaje
-                </a>
-                <a href="../Pages/registroConductor.html" class='mi-botonEncabezado'>
-                    Sé un Socio Conductor
-                </a>
-            </div>
+            <ul class="botones">
+                <li>
+                    <a href="../Pages/registroUsuario.html" class="mi-botonEncabezado">
+                        Registro
+                    </a>
+                </li>
+                <li>
+                    <a href="../Pages/inicioSesion.html" class="mi-botonEncabezado">
+                        Inicia Sesión
+                    </a>
+                </li>
+                <li>
+                    <a href="../Pages/fichaColectivo.html" class="mi-botonEncabezado">
+                        Programa tu Viaje
+                    </a>
+                </li>
+                <li>
+                    <a href="../Pages/registroConductor.html" class="mi-botonEncabezado">
+                        Sé un Socio Conductor
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
     <div class="container-reserva">
-    <section id="titulos" class="titulos-reserva"></section>
-    <section id="cuerpo" class="cuerpo-reserva"></section>
-    <section id="request">
-        <label for="requestNumeroAsientos">Reservar Asientos</label>
-        <input id="requestNumeroAsientos" type="number" />
-        <button id="reservarViajeColectivo" class="button-reservar">Reservar</button>
-    </section>
-</div>
+        <section id="titulos" class="titulos-reserva"></section>
+        <section id="cuerpo" class="cuerpo-reserva"></section>
+        <section id="request">
+            <label for="requestNumeroAsientos">Reservar Asientos</label>
+            <input id="requestNumeroAsientos" type="number" />
+            <button id="reservarViajeColectivo" class="button-reservar">Reservar</button>
+        </section>
+    </div>
     <div class="whatsapp-button">
         <p class="parrafo-wsp">¿Necesitas ayuda?</p>
         <a href="https://wa.me/51956804564" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
         </a>
-      </div>
+    </div>
     <footer>
+        <img src="../img/img_footer.png" alt="Redes sociales" class="img-footer" />
         <p>© 2024 Johel Cueva - Michael Limaco. Todos los derechos reservados.</p>
         <div class="contenedor-footer">
             <a class="item" href="#">Políticas de privacidad</a>
             <a class="item" href="#">Términos del servicio</a>
             <a class="item" href="#">Contáctanos</a>
         </div>
-        <img src="../img/img_footer.png" alt="Redes sociales" class='img-footer'>
     </footer>
     <script src="../js/fichaColectivoForm.js"></script>
 </body>
