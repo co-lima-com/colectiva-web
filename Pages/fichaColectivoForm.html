@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fichaColectivo.css">
     <title>Colectiva</title>
 </head>
 
@@ -32,13 +33,21 @@
             </div>
         </nav>
     </header>
-    <section id="titulos"></section>
-    <section id="cuerpo"></section>
+    <div class="container-reserva">
+    <section id="titulos" class="titulos-reserva"></section>
+    <section id="cuerpo" class="cuerpo-reserva"></section>
     <section id="request">
         <label for="requestNumeroAsientos">Reservar Asientos</label>
         <input id="requestNumeroAsientos" type="number" />
-        <button id="reservarViajeColectivo">Reservar</button>
+        <button id="reservarViajeColectivo" class="button-reservar">Reservar</button>
     </section>
+</div>
+    <div class="whatsapp-button">
+        <p class="parrafo-wsp">¿Necesitas ayuda?</p>
+        <a href="https://wa.me/51956804564" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+        </a>
+      </div>
     <footer>
         <p>© 2024 Johel Cueva - Michael Limaco. Todos los derechos reservados.</p>
         <div class="contenedor-footer">

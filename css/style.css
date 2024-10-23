@@ -3,10 +3,12 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
+
 body {
     margin: 0;
     background-color: white;
 }
+
 .contenedor {
     position: relative;
     /* Establece el contenedor como relativo */
@@ -15,6 +17,7 @@ body {
     height: 300px;
     /* Ajusta la altura según sea necesario */
 }
+
 .imagen {
     position: absolute;
     /* Posiciona la imagen de manera absoluta */
@@ -28,12 +31,13 @@ body {
     height: auto;
     /* Mantiene la proporción original de la imagen */
 }
+
 .botones {
     position: absolute;
     /* Posiciona la imagen de manera absoluta */
     top: 70px;
     /* Alinea la imagen en la parte superior */
-    right: 15%;
+    right: 23%;
     /* Alinea la imagen a la derecha */
     width: 20%;
     /* Ajusta el ancho al contenedor */
@@ -41,10 +45,12 @@ body {
     /* Mantiene la proporción original de la imagen */
     white-space: nowrap;
 }
+
 .mi-boton+.mi-boton {
     margin-left: 20px;
     /* Agrega un margen izquierdo de 20px a todos los enlaces excepto el primero */
 }
+
 .mi-botonEncabezado {
     text-decoration: none;
     color: black;
@@ -52,12 +58,7 @@ body {
     /* Espacio interno: 10px arriba y abajo, 20px a los lados */
     margin: 15px;
     /* Espacio externo: 15px en todos los lados */
-    border: none;
-    /* Sin borde */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    cursor: pointer;
-    /* Cambia el cursor al pasar por encima */
+
     border: none;
     /* Sin borde */
     border-radius: 5px;
@@ -67,9 +68,11 @@ body {
     transition: background-color 0.3s;
     /* Transición suave para el cambio de color */
 }
+
 .mi-botonEncabezado:hover {
     background-color: #D84E55;
 }
+
 .contenedor-dos {
     display: flex;
     /* Activa Flexbox */
@@ -79,31 +82,84 @@ body {
     /* Centra verticalmente */
     width: 100%;
     /* Ajusta el ancho según sea necesario */
-    height: 400px;
+    height: 600px;
     /* Ajusta la altura según sea necesario */
-    justify-content: center; /* Alinear a la izquierda */
+    justify-content: center;
     background:
         url('../img/img_background.png') center,
         /* Imagen de fondo */
         rgba(255, 255, 255, 0.342);
+
     /* Color de fondo con transparencia */
-    background-size:contain;
+    background-size: contain;
     /* Ajusta la imagen para cubrir el área */
     background-repeat: repeat-x;
+    transition: background 0.5s ease;
+    animation: desplazar 10s linear infinite;
+    /* Animación continua */
 }
-.my-form{
-    margin-top: -15px;
+
+
+
+.img-contenedor:hover {
+    transform: scale(1.1);
 }
+
+.my-form {
+    margin-top: -500px;
+    background-color: white;
+}
+
+form label {
+    font-weight: bold;
+    color: black;
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 10px 20px;
+    /* Espacio interno: 10px arriba y abajo, 20px a los lados */
+    margin: 15px;
+    /* Espacio externo: 10px en todos los lados */
+}
+
+.boton-buscar {
+    font-weight: bold;
+    background-color: #D84E55;
+    font-size: 15px;
+    color: white;
+
+    padding: 10px 20px;
+    /* Espacio interno: 10px arriba y abajo, 20px a los lados */
+    margin: 15px;
+    /* Espacio externo: 15px en todos los lados */
+    border: none;
+
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s;
+    /* Transición suave para el cambio de color */
+
+}
+
+.boton-buscar:hover {
+    background-color: #000000;
+}
+
 .my-date {
     margin-inline: 50px;
     margin-top: -15px;
 }
-.pDate{
+
+.pDate {
     font-size: smaller;
-    color:white;
+    color: white;
     background-color: #272626;
     text-align: center;
 }
+
 .my-button {
     background-color: #D84E55;
     /* Color de fondo verde */
@@ -121,10 +177,12 @@ body {
     /* Transición suave para el cambio de color */
     margin-top: 0px;
 }
+
 .my-button:hover {
     background-color: #3D0808;
     /* Color de fondo más oscuro al pasar el ratón */
 }
+
 footer {
     background-color: #272626;
     color: #fff;
@@ -133,74 +191,151 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 80px; /* Establece una altura para el footer */
+    height: 80px;
+    /* Establece una altura para el footer */
     margin-bottom: -5%;
-    justify-content: center; /* Centra horizontalmente los enlaces */
-    align-items: center; /* Centra verticalmente los enlaces (opcional) */
+    justify-content: center;
+    /* Centra horizontalmente los enlaces */
+    align-items: center;
+    /* Centra verticalmente los enlaces (opcional) */
 }
+
 footer a {
-    position: absolute; /* Permite colocar el enlace en una posición específica */
-    top: 10%; /* Coloca el enlace en la mitad del contenedor */
-    left: 40%; /* Coloca el enlace en la mitad del contenedor */
-    transform: translate(50%, 40%); /* Centra el enlace tanto vertical como horizontalmente */
+    position: absolute;
+    /* Permite colocar el enlace en una posición específica */
+    top: 10%;
+    /* Coloca el enlace en la mitad del contenedor */
+    left: 40%;
+    /* Coloca el enlace en la mitad del contenedor */
+    transform: translate(50%, 40%);
+    /* Centra el enlace tanto vertical como horizontalmente */
     color: white;
     text-decoration: none;
 }
-footer p{
-    position: absolute; /* Permite colocar el enlace en una posición específica */
-    top: 50; /* Coloca el enlace en la mitad del contenedor */
-    left: 35%; /* Coloca el enlace en la mitad del contenedor */
+
+footer p {
+    position: absolute;
+    /* Permite colocar el enlace en una posición específica */
+    top: 50;
+    /* Coloca el enlace en la mitad del contenedor */
+    left: 35%;
+    /* Coloca el enlace en la mitad del contenedor */
 }
-.img-footer{
-    width: 100px; /* Establece el ancho de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    float: left; /* Alinea la imagen a la izquierda */
+
+.img-footer {
+    width: 100px;
+    /* Establece el ancho de la imagen */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    float: left;
+    /* Alinea la imagen a la izquierda */
     margin-top: -1%;
 }
+
 .contenedor-footer {
-    display: flex; /* Activa el modelo flexbox */
-    gap: 60px; /* Espacio horizontal entre los elementos */
+    display: flex;
+    /* Activa el modelo flexbox */
+    gap: 60px;
+    /* Espacio horizontal entre los elementos */
 }
-.item +.item + .item{
+
+.item+.item+.item {
     margin-left: 16%;
 }
-.item +.item {
+
+.item+.item {
     margin-left: 1%;
 }
-.item{
+
+.item {
     margin-left: -12%;
 }
+
 .whatsapp-button {
-    position: fixed; /* Fijo en la pantalla */
-    bottom: 20px; /* Espacio desde el fondo */
-    right: 20px; /* Espacio desde la derecha */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-    animation: saltar 2s infinite; /* Agrega la animación de saltar */
+    position: fixed;
+    /* Fijo en la pantalla */
+    bottom: 20px;
+    /* Espacio desde el fondo */
+    right: 20px;
+    /* Espacio desde la derecha */
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+    animation: saltar 2s infinite;
+    /* Agrega la animación de saltar */
 }
+
 @keyframes saltar {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
+
     100% {
         transform: translateY(0);
     }
 }
+
 .whatsapp-button img {
-    width: 60px; /* Ancho del icono */
-    height: 60px; /* Alto del icono */
-    border-radius: 50%; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
-    transition: transform 0.3s; /* Transición suave */
+    width: 60px;
+    /* Ancho del icono */
+    height: 60px;
+    /* Alto del icono */
+    border-radius: 50%;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra para profundidad */
+    transition: transform 0.3s;
+    /* Transición suave */
 }
+
 .whatsapp-button img:hover {
-    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+    transform: scale(1.1);
+    /* Efecto de aumento al pasar el mouse */
 }
-.parrafo-wsp{
-    font-size:medium;
-    color:white;
+
+.parrafo-wsp {
+    font-size: medium;
+    color: white;
     background-color: #000000;
     padding-block: 10px;
 }
+
+.catViaje{
+   font-size: x-large;
+    color: black;
+    /* Color del texto blanco */
+    padding: 10px 1px;
+    /* Espaciado interno */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+    transition: transform 0.3s;
+    /* Transición suave para el cambio de color */
+    margin-top: 0px;
+    position: fixed;
+    /* Fijo en la pantalla */
+    bottom: 50%;
+    /* Espacio desde el fondo */
+    right: 35%;
+    /* Espacio desde la derecha */
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+    
+  
+    }
+    .catViaje:hover {
+        transform: scale(1.1);
+        /* Efecto de aumento al pasar el mouse */
+        background-color: #D84E55
+    }
+
+    .my-form > input{
+        padding: 10px 15px;
+        border-radius: 6px;
+    }

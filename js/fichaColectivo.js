@@ -78,4 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     console.log("El botón 'reservarViaje' no existe en el DOM");
   }
+  
+    // Redirigir al usuario a la página index.html
+    window.location.href = '../index.html';
 });

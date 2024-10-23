@@ -1,0 +1,92 @@
+
+
+.button-reservar {
+    font-weight: bold;
+    background-color: #D84E55;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s;
+    /* Transición suave para el cambio de color */
+    justify-content: center;
+
+    padding: 10px 20px;
+    /* Espacio interno: 10px arriba y abajo, 20px a los lados */
+    margin: 15px;
+    /* Espacio externo: 15px en todos los lados */
+    display: flex;
+    
+
+
+}
+
+.button-reservar:hover {
+    background-color: #000000;
+
+}
+
+h2 {
+    display: flex;
+    margin-left: 33%;
+    margin-bottom: 2%;
+    font-size: xx-large;
+    width: 100%;
+    text-align: center;
+
+}
+
+h3 {
+    display: flex;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    font-size: xx-large;
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    text-align: center;
+
+}
+
+img {
+    display: block;
+    /* Convierte la imagen en un elemento de bloque */
+    margin: 0 auto;
+    /* Aplica márgenes automáticos a los lados */
+    margin-bottom: 10%;
+}
+
+.container-reserva{
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+label{
+    display: flex;
+    border: none;
+
+}
+
+#request{
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    margin-top: -10%;
+}
+
+#requestNumeroAsientos{
+    display: flex; /* Activa Flexbox */
+    text-align: center;   
+    
+}
+

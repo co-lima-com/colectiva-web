@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/registroColectivo.css">
     <title>Colectiva</title>
 </head>
 
@@ -33,26 +34,42 @@
         </nav>
     </header>
     <section>
-        <form id="registroColectivo" action="">
+        <form id="registroColectivo"  class="form-colectivo" action="">
             <fieldset>
-                <legend>Registra los Datos de tu Vehículo</legend>
-                <label for="poolMarca">Marca</label>
+                <legend class="encabezado-colectivo">Registra los Datos de tu Vehículo</legend>
+                <div class="form-group">
+                <label for="poolMarca">Marca:</label>
                 <input id="poolMarca" type="text">
-                <label for="poolYear">Año</label>
+            </div>
+            <div class="form-group">
+                <label for="poolYear">Año:</label>
                 <input id="poolYear" type="number">
-                <label for="poolModelo">Modelo</label>
+            </div>
+            <div class="form-group">
+                <label for="poolModelo">Modelo:</label>
                 <input id="poolModelo" type="text" placeholder="Ingresa el modelo del Vehículo">
-                <label for="poolPlaca">Placa</label>
+            </div>
+            <div class="form-group">
+                <label for="poolPlaca">Placa:</label>
                 <input id="poolPlaca" type="text" placeholder="Nro. de Placa">
-                <label for="poolNumeroAsientos">Numero de Asientos</label>
+            </div>
+            <div class="form-group">
+                <label for="poolNumeroAsientos">Número de Asientos:</label>
                 <input id="poolNumeroAsientos" type="number">
-                <label for="poolFoto1">Foto del Vehículo</label>
+            </div>
+            <div class="form-group">
+                <label for="poolFoto1">Foto del Vehículo:</label>
                 <input id="poolFoto1" type="text">
-                <label for="poolParaderoInicio">Paradero Inicio</label>
+            </div>
+            <div class="form-group">
+                <label for="poolParaderoInicio">Paradero Inicio:</label>
                 <input id="poolParaderoInicio" type="text" placeholder="Paradero Inicio">
-                <label for="poolParaderoLlegada">Paradero Llegada</label>
+            </div>
+            <div class="form-group">
+                <label for="poolParaderoLlegada">Paradero Llegada:</label>
                 <input id="poolParaderoLlegada" type="text" placeholder="Paradero Llegada">
-                <button type="submit">Regístrate</button>
+            </div>
+                <button class="button-colectivo" type="submit">Registra tu vehículo</button>
             </fieldset>
         </form>
 

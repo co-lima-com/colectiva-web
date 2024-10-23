@@ -68,7 +68,7 @@ function mostrarResultados(origen, destino) {
 
   viajes.forEach((viaje, index) => {
     if (viaje.origen === origen && viaje.destino === destino) {
-      const buttonElement = document.createElement("button");
+      const buttonElement = document.createElement("catViaje");
       buttonElement.textContent = `Viaje ${index + 1}: ${viaje.origen} -> ${
         viaje.destino
       }`;

@@ -1,0 +1,74 @@
+.form-conductor {
+    width: 300px; /* Ancho del formulario */
+    margin: 0 auto; /* Centra el formulario en la página */
+    height: 150vh;
+    
+    
+  }
+  
+  .form-group {
+    margin-bottom: 30px; /* Espaciado entre cada grupo de formulario */
+    
+
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos dentro del contenedor */
+    margin-bottom: 15px; /* Espaciado entre grupos de formulario */
+  
+  }
+  
+  label {
+    display: flex; /* Hace que la etiqueta ocupe toda la línea */
+    
+    width: 85%; /* Hace que los inputs ocupen todo el ancho del contenedor */
+    border: 5px solid #ccc; /* Borde ligero */
+    border-radius: 4px; /* Esquinas redondeadas */
+    
+  }
+  
+  input, textarea {
+    display: flex;
+    width: 93%; /* Hace que los inputs ocupen todo el ancho del contenedor */
+    padding: 8px; /* Espaciado interno para mayor comodidad */
+    margin-left: 0%;
+    border: 1px solid #ccc; /* Borde ligero */
+    border-radius: 4px; /* Esquinas redondeadas */
+  }
+  
+  .button-conductor {
+    font-weight: bold;
+    background-color: #D84E55;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s;
+    /* Transición suave para el cambio de color */
+    justify-content: center;
+
+    padding: 10px 20px;
+    /* Espacio interno: 10px arriba y abajo, 20px a los lados */
+    margin: 15px;
+    /* Espacio externo: 15px en todos los lados */
+    display: flex;
+    margin-left: 30%;
+    
+
+}
+    
+  .button-conductor:hover {
+    background-color: #000000;
+     
+  }
+
+  .encabezado-conductor{
+    display: flex;
+    margin-left:5%;
+    margin-bottom: 20%;
+    font-size: xx-large;
+    width: 100%;
+
+  }

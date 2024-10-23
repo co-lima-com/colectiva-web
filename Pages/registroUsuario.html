@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/registroUsuario.css">
     <title>Colectiva</title>
 </head>
 
@@ -33,29 +34,54 @@
         </nav>
     </header>
     <section>
-        <form id="registrationForm" action="">
+        <form id="registrationForm" class="form-usuario">
             <fieldset>
-                <legend>Registra tus Datos</legend>
-                <label for="userNombre">Nombre</label>
+                
+                <legend class="encabezado-usuario">Registra tus Datos</legend>
+                <div class="form-group">
+                <label for="userNombre">Nombre:</label>
                 <input id="userNombre" type="text" placeholder="Escribe tu Nombre">
-                <label for="userApellidoPaterno">Apellido Paterno</label>
+                </div>
+                <div class="form-group">
+                <label for="userApellidoPaterno">Apellido Paterno:</label>
                 <input id="userApellidoPaterno" type="text" placeholder="Escribe tu Apellido Paterno">
-                <label for="userApellidoMaterno">Apellido Materno</label>
+                </div>
+                <div class="form-group">
+                <label for="userApellidoMaterno">Apellido Materno:</label>
                 <input id="userApellidoMaterno" type="text" placeholder="Escribe tu Apellido Materno">
-                <label for="userFechaNacimiento">Fecha de Nacimiento</label>
+                </div>
+                <div class="form-group">
+                <label for="userFechaNacimiento">Fecha de Nacimiento:</label>
                 <input id="userFechaNacimiento" type="date">
-                <label for="userDNI">DNI</label>
+                </div>
+                <div class="form-group">
+                <label for="userDNI">DNI:</label>
                 <input id="userDNI" type="number">
-                <label for="userDireccion">Dirección</label>
+                </div>
+                <div class="form-group">
+                <label for="userDireccion">Dirección:</label>
                 <input id="userDireccion" type="text" placeholder="Ingresa tu Dirección">
-                <label for="userEmail">Correo Electrónico</label>
+                </div>
+                <div class="form-group">
+                <label for="userEmail">Correo Electrónico:</label>
                 <input id="userEmail" type="text" placeholder="Ingresa tu Dirección de Correo Electrónico">
-                <label for="userPassword">Contraseña</label>
+                </div>
+                <div class="form-group">
+                <label for="userPassword">Contraseña:</label>
                 <input id="userPassword" type="password">
-                <button type="submit">Regístrate</button>
+                </div>
+                <div class="form-group"></div>
+                <button class="button-usuario" type="submit">Regístrate</button>
+                </div>
             </fieldset>
         </form>
     </section>
+    <div class="whatsapp-button">
+        <p class="parrafo-wsp">¿Necesitas ayuda?</p>
+        <a href="https://wa.me/51956804564" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+        </a>
+      </div>
     <footer>
         <p>© 2024 Johel Cueva - Michael Limaco. Todos los derechos reservados.</p>
         <div class="contenedor-footer">
