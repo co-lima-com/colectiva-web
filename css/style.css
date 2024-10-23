@@ -1,341 +1,329 @@
 html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background-color: white;
+  margin: 0;
+  background-color: white;
 }
 
 .contenedor {
-    position: relative;
-    /* Establece el contenedor como relativo */
-    width: 100%;
-    /* Ajusta el ancho según sea necesario */
-    height: 300px;
-    /* Ajusta la altura según sea necesario */
+  /* position: relative; */
+  /* Establece el contenedor como relativo */
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  /* Ajusta el ancho según sea necesario */
+  /* height: 300px; */
+  /* Ajusta la altura según sea necesario */
+}
+
+.contenedor > ul {
+  display: flex;
 }
 
 .imagen {
-    position: absolute;
-    /* Posiciona la imagen de manera absoluta */
-    top: 40px;
-    ;
-    /* Alinea la imagen en la parte superior */
-    left: 5%;
-    /* Alinea la imagen a la izquierda */
-    width: 20%;
-    /* Ajusta el ancho a la mitad del contenedor */
-    height: auto;
-    /* Mantiene la proporción original de la imagen */
+  /* position: absolute; */
+  /* Posiciona la imagen de manera absoluta */
+  /* top: 40px; */
+  /* Alinea la imagen en la parte superior */
+  /* left: 5%; */
+  /* Alinea la imagen a la izquierda */
+  width: 20%;
+  /* Ajusta el ancho a la mitad del contenedor */
+  height: auto;
+  /* Mantiene la proporción original de la imagen */
 }
 
 .botones {
-    position: absolute;
-    /* Posiciona la imagen de manera absoluta */
-    top: 70px;
-    /* Alinea la imagen en la parte superior */
-    right: 23%;
-    /* Alinea la imagen a la derecha */
-    width: 20%;
-    /* Ajusta el ancho al contenedor */
-    height: auto;
-    /* Mantiene la proporción original de la imagen */
-    white-space: nowrap;
+  /* position: absolute; */
+  /* Posiciona la imagen de manera absoluta */
+  /* top: 70px; */
+  /* Alinea la imagen en la parte superior */
+  /* right: 23%; */
+  /* Alinea la imagen a la derecha */
+  /* width: 20%; */
+  /* Ajusta el ancho al contenedor */
+  /* height: auto; */
+  /* Mantiene la proporción original de la imagen */
+  white-space: nowrap;
 }
 
-.mi-boton+.mi-boton {
-    margin-left: 20px;
-    /* Agrega un margen izquierdo de 20px a todos los enlaces excepto el primero */
+.mi-boton + .mi-boton {
+  margin-left: 20px;
+  /* Agrega un margen izquierdo de 20px a todos los enlaces excepto el primero */
 }
 
 .mi-botonEncabezado {
-    text-decoration: none;
-    color: black;
-    padding: 10px 20px;
-    /* Espacio interno: 10px arriba y abajo, 20px a los lados */
-    margin: 15px;
-    /* Espacio externo: 15px en todos los lados */
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  /* Espacio interno: 10px arriba y abajo, 20px a los lados */
+  margin: 15px;
+  /* Espacio externo: 15px en todos los lados */
 
-    border: none;
-    /* Sin borde */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    cursor: pointer;
-    /* Cambia el cursor al pasar el ratón */
-    transition: background-color 0.3s;
-    /* Transición suave para el cambio de color */
+  border: none;
+  /* Sin borde */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cambia el cursor al pasar el ratón */
+  transition: background-color 0.3s;
+  /* Transición suave para el cambio de color */
 }
 
 .mi-botonEncabezado:hover {
-    background-color: #D84E55;
+  background-color: #d84e55;
 }
 
 .contenedor-dos {
-    display: flex;
-    /* Activa Flexbox */
-    justify-content: center;
-    /* Centra horizontalmente */
-    align-items: center;
-    /* Centra verticalmente */
-    width: 100%;
-    /* Ajusta el ancho según sea necesario */
-    height: 600px;
-    /* Ajusta la altura según sea necesario */
-    justify-content: center;
-    background:
-        url('../img/img_background.png') center,
-        /* Imagen de fondo */
-        rgba(255, 255, 255, 0.342);
+  display: flex;
+  /* Activa Flexbox */
+  justify-content: center;
+  flex-direction: column;
+  /* Centra horizontalmente */
+  align-items: center;
+  margin-top: 20px;
+  /* Centra verticalmente */
+  width: 100%;
+  /* Ajusta el ancho según sea necesario */
+  min-height: 100vh;
+  /* Ajusta la altura según sea necesario */
+  justify-content: center;
+  background: url("../img/img_background.png") center,
+    /* Imagen de fondo */ rgba(255, 255, 255, 0.342);
 
-    /* Color de fondo con transparencia */
-    background-size: contain;
-    /* Ajusta la imagen para cubrir el área */
-    background-repeat: repeat-x;
-    transition: background 0.5s ease;
-    animation: desplazar 10s linear infinite;
-    /* Animación continua */
+  /* Color de fondo con transparencia */
+  background-size: contain;
+  /* Ajusta la imagen para cubrir el área */
+  background-repeat: repeat-x;
+  /* transition: background 0.5s ease; */
+  /* animation: desplazar 10s linear infinite; */
+  /* Animación continua */
 }
 
-
-
 .img-contenedor:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .my-form {
-    margin-top: -500px;
-    background-color: white;
+  margin-top: -500px;
+  background-color: white;
 }
 
 form label {
-    font-weight: bold;
-    color: black;
-    border: none;
-    /* Sin borde */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    padding: 10px 20px;
-    /* Espacio interno: 10px arriba y abajo, 20px a los lados */
-    margin: 15px;
-    /* Espacio externo: 10px en todos los lados */
+  font-weight: bold;
+  color: black;
+  border: none;
+  /* Sin borde */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  padding: 10px 20px;
+  /* Espacio interno: 10px arriba y abajo, 20px a los lados */
+  margin: 15px;
+  /* Espacio externo: 10px en todos los lados */
 }
 
 .boton-buscar {
-    font-weight: bold;
-    background-color: #D84E55;
-    font-size: 15px;
-    color: white;
+  font-weight: bold;
+  background-color: #d84e55;
+  font-size: 15px;
+  color: white;
 
-    padding: 10px 20px;
-    /* Espacio interno: 10px arriba y abajo, 20px a los lados */
-    margin: 15px;
-    /* Espacio externo: 15px en todos los lados */
-    border: none;
+  padding: 10px 20px;
+  /* Espacio interno: 10px arriba y abajo, 20px a los lados */
+  margin: 15px;
+  /* Espacio externo: 15px en todos los lados */
+  border: none;
 
-    border-radius: 5px;
-    /* Bordes redondeados */
-    cursor: pointer;
-    /* Cambia el cursor al pasar el ratón */
-    transition: background-color 0.3s;
-    /* Transición suave para el cambio de color */
-
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cambia el cursor al pasar el ratón */
+  transition: background-color 0.3s;
+  /* Transición suave para el cambio de color */
 }
 
 .boton-buscar:hover {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .my-date {
-    margin-inline: 50px;
-    margin-top: -15px;
+  margin-inline: 50px;
+  margin-top: -15px;
 }
 
 .pDate {
-    font-size: smaller;
-    color: white;
-    background-color: #272626;
-    text-align: center;
+  font-size: smaller;
+  color: white;
+  background-color: #272626;
+  text-align: center;
 }
 
 .my-button {
-    background-color: #D84E55;
-    /* Color de fondo verde */
-    color: white;
-    /* Color del texto blanco */
-    padding: 10px 20px;
-    /* Espaciado interno */
-    border: none;
-    /* Sin borde */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    cursor: pointer;
-    /* Cambia el cursor al pasar el ratón */
-    transition: background-color 0.3s;
-    /* Transición suave para el cambio de color */
-    margin-top: 0px;
+  background-color: #d84e55;
+  /* Color de fondo verde */
+  color: white;
+  /* Color del texto blanco */
+  padding: 10px 20px;
+  /* Espaciado interno */
+  border: none;
+  /* Sin borde */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cambia el cursor al pasar el ratón */
+  transition: background-color 0.3s;
+  /* Transición suave para el cambio de color */
+  margin-top: 0px;
 }
 
 .my-button:hover {
-    background-color: #3D0808;
-    /* Color de fondo más oscuro al pasar el ratón */
+  background-color: #3d0808;
+  /* Color de fondo más oscuro al pasar el ratón */
 }
 
 footer {
-    background-color: #272626;
-    color: #fff;
-    padding: 50px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
-    /* Establece una altura para el footer */
-    margin-bottom: -5%;
-    justify-content: center;
-    /* Centra horizontalmente los enlaces */
-    align-items: center;
-    /* Centra verticalmente los enlaces (opcional) */
+  background-color: #272626;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  border: solid white;
+  /* width: 100%; */
+  justify-content: space-between;
+  /* Centra horizontalmente los enlaces */
+  align-items: center;
+  /* Centra verticalmente los enlaces (opcional) */
 }
 
 footer a {
-    position: absolute;
-    /* Permite colocar el enlace en una posición específica */
-    top: 10%;
-    /* Coloca el enlace en la mitad del contenedor */
-    left: 40%;
-    /* Coloca el enlace en la mitad del contenedor */
-    transform: translate(50%, 40%);
-    /* Centra el enlace tanto vertical como horizontalmente */
-    color: white;
-    text-decoration: none;
-}
-
-footer p {
-    position: absolute;
-    /* Permite colocar el enlace en una posición específica */
-    top: 50;
-    /* Coloca el enlace en la mitad del contenedor */
-    left: 35%;
-    /* Coloca el enlace en la mitad del contenedor */
+  /* Permite
+  /* Coloca el enlace en la mitad del contenedor */
+  /* transform: translate(50%, 40%); */
+  /* Centra el enlace tanto vertical como horizontalmente */
+  color: white;
+  text-decoration: none;
 }
 
 .img-footer {
-    width: 100px;
-    /* Establece el ancho de la imagen */
-    height: auto;
-    /* Mantiene la proporción de la imagen */
-    float: left;
-    /* Alinea la imagen a la izquierda */
-    margin-top: -1%;
+  width: 100px;
+  /* width: 100px; */
 }
 
 .contenedor-footer {
-    display: flex;
-    /* Activa el modelo flexbox */
-    gap: 60px;
-    /* Espacio horizontal entre los elementos */
-}
-
-.item+.item+.item {
-    margin-left: 16%;
-}
-
-.item+.item {
-    margin-left: 1%;
-}
-
-.item {
-    margin-left: -12%;
+  display: flex;
+  /* Activa el modelo flexbox */
+  gap: 60px;
+  /* Espacio horizontal entre los elementos */
 }
 
 .whatsapp-button {
-    position: fixed;
-    /* Fijo en la pantalla */
-    bottom: 20px;
-    /* Espacio desde el fondo */
-    right: 20px;
-    /* Espacio desde la derecha */
-    z-index: 1000;
-    /* Asegura que esté por encima de otros elementos */
-    animation: saltar 2s infinite;
-    /* Agrega la animación de saltar */
+  position: fixed;
+  /* Fijo en la pantalla */
+  bottom: 20px;
+  /* Espacio desde el fondo */
+  right: 20px;
+  /* Espacio desde la derecha */
+  z-index: 1000;
+  /* Asegura que esté por encima de otros elementos */
+  animation: saltar 2s infinite;
+  /* Agrega la animación de saltar */
 }
 
 @keyframes saltar {
-    0% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    50% {
-        transform: translateY(-10px);
-    }
+  50% {
+    transform: translateY(-10px);
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .whatsapp-button img {
-    width: 60px;
-    /* Ancho del icono */
-    height: 60px;
-    /* Alto del icono */
-    border-radius: 50%;
-    /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    /* Sombra para profundidad */
-    transition: transform 0.3s;
-    /* Transición suave */
+  width: 60px;
+  /* Ancho del icono */
+  height: 60px;
+  /* Alto del icono */
+  border-radius: 50%;
+  /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  /* Sombra para profundidad */
+  transition: transform 0.3s;
+  /* Transición suave */
 }
 
 .whatsapp-button img:hover {
-    transform: scale(1.1);
-    /* Efecto de aumento al pasar el mouse */
+  transform: scale(1.1);
+  /* Efecto de aumento al pasar el mouse */
 }
 
 .parrafo-wsp {
-    font-size: medium;
-    color: white;
-    background-color: #000000;
-    padding-block: 10px;
+  font-size: medium;
+  color: white;
+  background-color: #000000;
+  padding-block: 10px;
 }
 
-.catViaje{
-   font-size: x-large;
-    color: black;
-    /* Color del texto blanco */
-    padding: 10px 1px;
-    /* Espaciado interno */
-    border: none;
-    /* Sin borde */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    cursor: pointer;
-    /* Cambia el cursor al pasar el ratón */
-    transition: transform 0.3s;
-    /* Transición suave para el cambio de color */
-    margin-top: 0px;
-    position: fixed;
-    /* Fijo en la pantalla */
-    bottom: 50%;
-    /* Espacio desde el fondo */
-    right: 35%;
-    /* Espacio desde la derecha */
-    z-index: 1000;
-    /* Asegura que esté por encima de otros elementos */
-    
-  
-    }
-    .catViaje:hover {
-        transform: scale(1.1);
-        /* Efecto de aumento al pasar el mouse */
-        background-color: #D84E55
-    }
+.catViaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  width: 100%;
+}
 
-    .my-form > input{
-        padding: 10px 15px;
-        border-radius: 6px;
-    }
+.catViaje > button {
+  color: black;
+  /* Color del texto blanco */
+  padding: 10px 1px;
+  /* Espaciado interno */
+  border: none;
+  /* Sin borde */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cambia el cursor al pasar el ratón */
+  transition: transform 0.3s;
+}
+
+.my-form > input {
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.viaje {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+}
+
+.viaje > button {
+  color: white;
+  /* Color del texto blanco */
+  padding: 10px 15px;
+  /* Espaciado interno */
+  border: none;
+  /* Sin borde */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cambia el cursor al pasar el ratón */
+  transition: transform 0.3s;
+  background-color: #d84e55;
+}

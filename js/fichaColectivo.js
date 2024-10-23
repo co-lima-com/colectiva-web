@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // Función para cargar todos los datos de los viajes desde el local storage y actualizar el HTML
 function cargarDatosViajes() {
@@ -70,15 +70,15 @@ document.addEventListener("DOMContentLoaded", () => {
   cargarDatosViajes();
 
   // Agregar el evento de clic al botón reservarViaje
-  const botonReservar = document.getElementById('reservarViaje');
+  const botonReservar = document.getElementById("reservarViaje");
   if (botonReservar) {
-    botonReservar.addEventListener('click', () => {
-      alert("Hiciste tu reserva de asientos con éxito, te enviaremos los datos por correo");
+    botonReservar.addEventListener("click", () => {
+      alert(
+        "Hiciste tu reserva de asientos con éxito, te enviaremos los datos por correo"
+      );
+      window.location.href = "../index.html";
     });
   } else {
     console.log("El botón 'reservarViaje' no existe en el DOM");
   }
-  
-    // Redirigir al usuario a la página index.html
-    window.location.href = '../index.html';
 });

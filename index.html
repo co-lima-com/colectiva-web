@@ -1,73 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Colectiva</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Colectiva</title>
-</head>
+  <body>
+    <header>
+      <nav class="contenedor">
+        <a href="./index.html">
+          <img src="./img/banner.png" alt="" class="imagen" />
+        </a>
 
-<body>
-  <header>
-    <nav class='contenedor'>
-      <a href="./index.html">
-        <img src="./img/banner.png" alt="" class='imagen'>
-      </a>
+        <ul class="botones">
+          <li>
+            <a href="./Pages/registroUsuario.html" class="mi-botonEncabezado">
+              Registro
+            </a>
+          </li>
+          <li>
+            <a href="./Pages/inicioSesion.html" class="mi-botonEncabezado">
+              Inicia Sesión
+            </a>
+          </li>
+          <li>
+            <a href="./Pages/fichaColectivo.html" class="mi-botonEncabezado">
+              Programa tu Viaje
+            </a>
+          </li>
+          <li>
+            <a href="./Pages/registroConductor.html" class="mi-botonEncabezado">
+              Sé un Socio Conductor
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="contenedor-dos">
+      <form id="formViaje" class="my-form" action="">
+        <label for="paraderos">Para de inicio y fin</label>
+        <select name="q" id="selectParaderos"></select>
+        <label for="date">Fecha de Viaje:</label>
+        <input type="date" id="date" />
+        <label for="time">Hora de Viaje:</label>
+        <input type="time" id="time" />
+        <button id="submitViaje" class="boton-buscar">Buscar</button>
+      </form>
+      <div id="catalogoViaje" class="catViaje" type="button"></div>
+    </section>
 
-      <div class='botones'>
-        <a href="./Pages/registroUsuario.html" class='mi-botonEncabezado'>
-          Registro
-        </a>
-        <a href="./Pages/inicioSesion.html" class='mi-botonEncabezado'>
-          Inicia Sesión
-        </a>
-        <a href="./Pages/fichaColectivo.html" class='mi-botonEncabezado'>
-          Programa tu Viaje
-        </a>
-        <a href="./Pages/registroConductor.html" class='mi-botonEncabezado'>
-          Sé un Socio Conductor
-        </a>
+    <footer>
+      <img src="./img/img_footer.png" alt="Redes sociales" class="img-footer" />
+      <p>© 2024 Johel Cueva - Michael Limaco. Todos los derechos reservados.</p>
+      <div class="contenedor-footer">
+        <a class="item" href="#">Políticas de privacidad</a>
+        <a class="item" href="#">Términos del servicio</a>
+        <a class="item" href="#">Contáctanos</a>
       </div>
-    </nav>
-  </header>
-  <section class="contenedor-dos">
-    
-     <form id="formViaje" class="my-form" action="">
-      <img src="" alt="" class="img-contenedor" />
-      <label for="queryInicio">Paradero de Inicio:</label>
-      <input type="search" id="queryInicio" name="q" placeholder="Search..." />
-      <img src="" alt="" />
-      <label for="queryLlegada">Paradero de Llegada:</label>
-      <input type="search" id="queryLlegada" name="q" placeholder="Search..." />
-      <img src="" alt="" />
-      <label for="date">Fecha de Viaje:</label>
-      <input type="date" id="date" />
-      <img src="" alt="" />
-      <label for="time">Hora de Viaje:</label>
-      <input type="time" id="time" />
-      <button id="submitViaje" class="boton-buscar">Buscar</button>
-    </form>
+    </footer>
+    <script src="./js/app.js"></script>
     <div class="whatsapp-button">
       <p class="parrafo-wsp">¿Necesitas ayuda?</p>
       <a href="https://wa.me/51956804564" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+        />
       </a>
     </div>
-    <button id="catalogoViaje" class ="catViaje" type="button"> </button>
-  </section>
-
-  <footer>
-    <p>© 2024 Johel Cueva - Michael Limaco. Todos los derechos reservados.</p>
-    <div class="contenedor-footer">
-      <a class="item" href="#">Políticas de privacidad</a>
-      <a class="item" href="#">Términos del servicio</a>
-      <a class="item" href="#">Contáctanos</a>
-    </div>
-    <img src="./img/img_footer.png" alt="Redes sociales" class='img-footer'>
-  </footer>
-  <script src="./js/app.js"></script>
-</body>
-
+  </body>
 </html>

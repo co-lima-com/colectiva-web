@@ -2,6 +2,26 @@
 
 const busquedaViaje = document.getElementById("formViaje");
 const resultadosViaje = document.getElementById("catalogoViaje");
+const selectParaderos = document.getElementById("selectParaderos");
+
+const trips = [
+  {
+    origen: "Aviacion",
+    destino: "Huarochiri",
+  },
+  {
+    origen: "Navarrete",
+    destino: "San Luis",
+  },
+  {
+    origen: "Salaverry",
+    destino: "Jockey Plaza",
+  },
+  {
+    origen: "La Marina",
+    destino: "Universidad de Lima",
+  },
+];
 
 const viajes = [
   {
@@ -11,6 +31,18 @@ const viajes = [
     horaViaje: "06:00",
     marca: "Mercedes-Benz",
     año: 2015,
+    modelo: "Sprinter",
+    placa: "KLM-123",
+    numeroAsientos: 20,
+    foto: "https://place-hold.it/450x375/aaa/black.png&text=450*375",
+  },
+  {
+    origen: "Aviacion",
+    destino: "Huarochiri",
+    fechaViaje: "2024-11-18",
+    horaViaje: "08:00",
+    marca: "Toyoya Rush",
+    año: 2020,
     modelo: "Sprinter",
     placa: "KLM-123",
     numeroAsientos: 20,
@@ -54,11 +86,18 @@ const viajes = [
   },
 ];
 
+for (let trip of trips) {
+  const option = document.createElement("option");
+  option.value = `${trip.origen}-${trip.destino}`;
+  option.textContent = `${trip.origen} ➡ ${trip.destino}`;
+
+  selectParaderos.appendChild(option);
+}
+
 busquedaViaje.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const origen = document.getElementById("queryInicio").value.trim();
-  const destino = document.getElementById("queryLlegada").value.trim();
+  const [origen, destino] = selectParaderos.value.split("-");
 
   mostrarResultados(origen, destino);
 });
@@ -68,12 +107,24 @@ function mostrarResultados(origen, destino) {
 
   viajes.forEach((viaje, index) => {
     if (viaje.origen === origen && viaje.destino === destino) {
-      const buttonElement = document.createElement("catViaje");
-      buttonElement.textContent = `Viaje ${index + 1}: ${viaje.origen} -> ${
-        viaje.destino
-      }`;
+      const container = document.createElement("div");
+      container.classList.add("viaje");
 
-      resultadosViaje.appendChild(buttonElement);
+      const title = document.createElement("h2");
+      title.textContent = `${viaje.origen} ➡ ${viaje.destino}`;
+
+      const img = document.createElement("img");
+      img.src = viaje.foto;
+      img.width = 100;
+
+      const buttonElement = document.createElement("button");
+      buttonElement.textContent = "Reservar viaje";
+
+      container.appendChild(title);
+      container.appendChild(img);
+      container.appendChild(buttonElement);
+
+      resultadosViaje.appendChild(container);
 
       // Almacenar los datos del viaje en local storage solo cuando se hace clic en el elemento anchor
       buttonElement.addEventListener("click", () => {
