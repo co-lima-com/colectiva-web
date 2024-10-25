@@ -1,8 +1,20 @@
 "use strict";
+const botonRegistro = document.getElementById("boton-registro");
+const botonLoggin = document.getElementById("boton-inicioSesion");
+const botonLoggout = document.getElementById("boton-cerrarSesion")
 
 const busquedaViaje = document.getElementById("formViaje");
 const resultadosViaje = document.getElementById("catalogoViaje");
 const selectParaderos = document.getElementById("selectParaderos");
+
+if(localStorage.getItem("is_logged")){
+  botonRegistro.remove();
+  botonLoggin.remove();
+  botonLoggout.style.display='inline';
+  localStorage.clear();
+}
+
+
 
 const trips = [
   {

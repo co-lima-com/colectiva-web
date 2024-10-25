@@ -17,17 +17,17 @@
             <img src="../img/banner.png" alt="" class="imagen" />
           </a>
   
-          <ul class="botones">
-            <li>
-            <a href="../Pages/registroUsuario.html" class="mi-botonEncabezado">
-              Registro
-            </a>
-          </li>
-          <li>
-            <a href="../Pages/inicioSesion.html" class="mi-botonEncabezado">
-              Inicia Sesión
-            </a>
-          </li>
+          <ul class="botones" id="botones-header">
+            <li id="boton-registro">
+              <a href="../Pages/registroUsuario.html" class="mi-botonEncabezado">
+                Registro
+              </a>
+            </li>
+            <li id="boton-inicioSesion">
+              <a href="../Pages/inicioSesion.html" class="mi-botonEncabezado">
+                Inicia Sesión
+              </a>
+            </li>
           <li>
             <a href="../Pages/fichaColectivo.html" class="mi-botonEncabezado">
               Programa tu Viaje
@@ -38,6 +38,11 @@
               Sé un Socio Conductor
             </a>
           </li>
+          <li>
+            <a href="../index.html" id = "boton-cerrarSesion"  class="mi-botonEncabezado">
+              Cerrar Sesión
+            </a>
+          </li>
         </ul>
         </nav>
       </header>
@@ -46,7 +51,7 @@
             <fieldset>
                 <Legend class="encabezado-conductor">¡Únete a nosotros! Registra tus Datos </Legend>
                 <div class="form-group">
-                <label for="driverNombre">Nombre</label>
+                <label for="driverNombre">Nombre:</label>
                 <input id="driverNombre" type="text" placeholder="Escribe tu Nombre">
             </div>
             <div class="form-group">
@@ -99,6 +104,7 @@
           <a class="item" href="#">Contáctanos</a>
         </div>
       </footer>
+      
     <script src="../js/registroConductor.js"></script>
 </body>
 

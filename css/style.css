@@ -318,3 +318,7 @@ footer a {
   transition: transform 0.3s;
   background-color: #d84e55;
 }
+
+#boton-cerrarSesion{
+  display: none;
+}
