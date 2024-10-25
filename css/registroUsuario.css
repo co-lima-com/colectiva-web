@@ -40,7 +40,7 @@ body {
     text-align: center;
     
     
-    width: 85%; /* Hace que los inputs ocupen todo el ancho del contenedor */
+    width:110%; /* Hace que los inputs ocupen todo el ancho del contenedor */
     border: 5px solid #ccc; /* Borde ligero */
     border-radius: 4px; /* Esquinas redondeadas */
     

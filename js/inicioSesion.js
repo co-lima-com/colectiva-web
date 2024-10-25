@@ -23,7 +23,7 @@ form.addEventListener('submit', (e) => {
         if (formData.userEmail === userEmail && formData.userPassword === userPassword) {
             alert('¡Inicio de sesión exitoso!');
             // Redirigir al usuario a la página principal o a donde desees
-            window.location.href = './index.html';
+            window.location.href = '../../index.html';
         } else {
             alert('Email o contraseña incorrectos. Inténtalo de nuevo.');
         }

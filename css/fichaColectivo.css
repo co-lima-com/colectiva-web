@@ -1,3 +1,17 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
 
 
 .button-reservar {
@@ -29,10 +43,14 @@
 
 }
 
+
+
+
 h2 {
     display: flex;
-    margin-left: 33%;
-    margin-bottom: 2%;
+
+    margin-left: 18% auto;
+    margin-top: 30% auto;
     font-size: xx-large;
     width: 100%;
     text-align: center;
@@ -41,52 +59,76 @@ h2 {
 
 h3 {
     display: flex;
-    margin-left: 1%;
-    margin-bottom: 2%;
-    font-size: xx-large;
+    
+    margin-left: 1% auto ;
+    margin-top: 5% auto;
+    font-size: x-large;
     width: 100%;
     text-align: center;
+
 }
 
-li {
-    text-align: center;
+
+
+.cuerpo-reserva > li {
+    display: flex;
+    align-content: center;
+    
+    
 
 }
 
 .container-reserva img {
-    display: block;
-    /* Convierte la imagen en un elemento de bloque */
-    margin: 0 auto;
-    /* Aplica márgenes automáticos a los lados */
-    margin-bottom: 10%;
-}
-
-.container-reserva{
-    display: flex; /* Activa Flexbox */
-    flex-direction: column; /* Organiza los elementos en columna */
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    height: 100vh; /* Altura completa de la ventana */
-}
-
-label{
-    display: flex;
-    border: none;
-
-}
-
-#request{
-    display: flex; /* Activa Flexbox */
-    flex-direction: column; /* Organiza los elementos en columna */
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    height: 100vh; /* Altura completa de la ventana */
-    margin-top: -10%;
-}
-
-#requestNumeroAsientos{
-    display: flex; /* Activa Flexbox */
-    text-align: center;   
     
+    display: flex;
+    /* Convierte la imagen en un elemento de bloque */
+    margin: 10 auto;
+    /* Aplica márgenes automáticos a los lados */
+    margin-top: 10%;
 }
 
+.container-reserva {
+    display: flex;
+    /* Activa Flexbox */
+    margin-top: 10%;
+    flex-direction: column;
+    /* Organiza los elementos en columna */
+    justify-content: center;
+    /* Centra verticalmente */
+    align-items: center;
+    /* Centra horizontalmente */
+    height: 80vh;
+    /* Altura completa de la ventana */
+}
+
+.container-reserva > label {
+    display: flex;
+    /* Hace que la etiqueta ocupe toda la línea */
+    text-align: center;
+
+
+    width: 100%;
+   
+
+}
+
+#request {
+    display: flex;
+    /* Activa Flexbox */
+    flex-direction: column;
+    /* Organiza los elementos en columna */
+    justify-content: center;
+    /* Centra verticalmente */
+    align-items: center;
+    /* Centra horizontalmente */
+    height: 100vh;
+    /* Altura completa de la ventana */
+    margin-top: 1%;
+}
+
+#requestNumeroAsientos {
+    display: flex;
+    /* Activa Flexbox */
+    text-align: center;
+
+}

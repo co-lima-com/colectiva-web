@@ -98,7 +98,7 @@ body {
 .my-form {
   display: flex;
   margin-top: -25vh;
-  margin-left: 20%;
+  margin-left: 35vh;
   background-color: white;
   border-radius: 5px;
   
@@ -124,7 +124,7 @@ form label {
   font-size: 15px;
   color: white;
 
-  padding: 10px 20px;
+  padding: 10px 30px;
   /* Espacio interno: 10px arriba y abajo, 20px a los lados */
   margin: 15px;
   /* Espacio externo: 15px en todos los lados */
